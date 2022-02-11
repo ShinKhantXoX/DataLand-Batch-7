@@ -1,0 +1,91 @@
+.bdstyle1{
+	border-style: solid;
+}
+.bdstyle2{
+	border-style: double;
+}
+.bdstyle3{
+	border-style: dotted;
+}
+.bdstyle4{
+	border-style: dashed;
+}
+.bdstyle5{
+	border-style: inset;
+}
+.bdstyle6{
+	border-style: outset;
+}
+.borderdesign{
+	width: 300px;
+	height: 300px;
+	color: red;
+	/*background-color:orange;*/
+	background:yellow;
+	/*border-radius: 20%;*/
+/*	              leftup rightup rightdown leftdown
+	border-radius: 50px 20px 50px 100px;*/
+	border-radius: 50%;
+	        /*s-stoke  s-style  c-color*/
+	border: 5px dashed red;
+}
+li{
+	/*list-style-type: circle;*/
+	/*list-style-type: circle;
+	list-style-type: none;
+	list-style-type: disc;*/
+	/*list-style: none;*/
+	/*list-style-type: decimal;*/
+	list-style-type: decimal-leading-zero;
+	/*border: 1px dotted red;*/
+	border:1px;
+	border-style: solid;
+	border-color: orange;
+	list-style-position: inside;
+	/*list-style-position: outside;*/
+}
+
+/*Attribute Selector
+*/
+input[type="text"]{
+	background-color: green;
+	width: 300px;
+	border-radius: 300px;
+	color: #fff;
+}
+
+input[type="password"]{
+	background-color: silver;
+	width: 300px;
+	border-radius: 30px
+}
+
+body{
+	/* background-image:url('../img/icon/icon1.png'); */
+	background-repeat: no-repeat;
+	/*background-repeat: repeat;*/
+
+	/*background-position: center;*/
+	/*background-position: right;*/
+	/*background-position: left;*/
+	/*background-position: top;*/
+	/*background-position: bottom;*/
+
+	/*background-position: right top;*/
+	/*background-position: left top;*/
+	/*background-position: right bottom;*/
+	background-position: left bottom;
+	background-attachment: scroll;
+	/*background-attachment: fixed;*/
+
+}
+
+
+
+
+
+
+
+/*[ ]  =array
+  name() =funtion
+*/

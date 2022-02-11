@@ -1,0 +1,140 @@
+/* Universal Selector */
+*{
+    cursor: pointer;
+}
+
+/* 1.Local font Integrate */
+    /* i.Local Machine Intergrate */
+/* body{
+    font-family: Arial;
+} */
+
+/* .p1{
+    font-family: Arial;
+}
+
+.p2{
+    font-family: Arial;
+}
+
+.p3{
+    font-family: Century,Arial,'Time New Rorem';
+} */
+
+
+ /* ii.project folder intergrate */
+
+ /* at-rules */
+/* for = Stick */
+ @font-face {
+     font-family: 'Stick';
+     src: local('Stick-Regular'),url(../libs/fonts/stick/Stick-Regular.ttf) format('woff');
+ }
+
+ /* for = akaya */
+ @font-face {
+     font-family: 'akaya';
+     src:url(../libs/fonts/akayatelivigala/AkayaTelivigala-Regular.ttf) format('woff');
+ }
+
+/* body{
+    font-family: 'Stick', sans-serif;
+} */
+
+.p1{
+    font-family: Stick;
+}
+
+.p2.p3{
+    font-family: 'akaya';
+}
+
+/* 2.Global font Integrate */
+/* body{
+    font-family:'Stick', sans-serif;
+} */
+
+/* .p1{
+    font-family: 'Stick', sans-serif;
+}
+
+.p2{
+    font-family: 'Stick';
+}
+
+.p3{
+    font-family: 'Akaya Kanadaka', cursive;
+} */
+
+.p4{
+    font-family: Arial,Century;
+
+    /* font-weight: bold;
+    font-weight: bolder; */
+        /* 100 to 900 */
+    /* font-weight: 600; */
+    /* font-style: italic; */
+    /* text-transform: uppercase; */
+    /* text-transform: lowercase; */
+    text-transform: capitalize;
+        /* Text Indentation */
+    text-indent: 50px;
+}
+
+.clickme{
+    text-decoration: none;
+}
+
+.clickme:visited{
+    color: aqua;
+}
+
+.clickme:hover{
+    color: red;
+    font-size: 20px;
+    text-transform: uppercase;
+    /* background-color: rgb(226, 221, 221); */
+}
+
+.menutext{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    background-color: aqua;
+    color: #fff;
+    /* padding: 10px; */
+        /* top-bottom  left-right */
+    /* padding: 10px 30px; */
+        /* top right bottom left */
+    /* padding: 10px 20px 30px 40px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+
+    /* 1s = 1000ms
+    1ms----------500ms---------1000ms
+    transition: all 1s; */
+
+    /* transition: background-color 5s; */
+
+    transition: background-color 2s,color 3s;
+}
+
+.menutext:hover{
+    background-color: rgba(238, 238, 238, 0.575);
+    color: aqua;
+}
+
+.imgdesign{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.imgdesign:hover{
+    width: 100px;
+    height: 100px;
+}
+

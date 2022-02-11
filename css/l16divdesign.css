@@ -1,0 +1,71 @@
+.firstdiv{
+    width: 200px;
+    height: 200px;
+    
+
+    background: rgba(40,136,127,1.00);
+    color: aqua;
+    font-size: 20px;
+}
+
+.seconddiv{
+    width: 300px;
+    height: 300px;
+    
+    /* background-image: url('../Img/Cover/bg1.jpg'); */
+    background: url('../Img/Cover/bg1.jpg');
+
+    /* can't not
+    background-color:url ; */
+    background-repeat: no-repeat;
+    /* background-repeat: repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y; */
+    background-position: center;
+    border: 1px solid red;
+    color: azure;
+}
+
+.divthree{
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+
+    /* can't
+    background-color: linear-gradient(); */
+
+    /* can
+    background-image: linear-gradient(red,orange); */
+/* 
+    background: linear-gradient(red,orange);
+    background: linear-gradient(red,orange,green,blue);
+
+    background: linear-gradient(#1c91e6);
+    background: linear-gradient(rgba(198, 72, 137, 0.8),rgba(40, 120, 136, 0.8)); */
+
+    /* background: linear-gradient(
+        red,
+        #1c91e6,
+        rgba(40, 120, 136, 0.8)
+    ); */
+
+    /* background: radial-gradient(red,orange);
+    background: radial-gradient(red,orange,blue,green); */
+    background: radial-gradient(rgba(198, 72, 137, 0.8),rgba(40, 120, 136, 0.8));
+}
+
+.divfour{
+    width: 200px;
+    height: 300px;
+    color: #fff;
+    border: 2px solid aqua;
+    /* linear-gradient ko a yin yay ya tl
+    deg ka color yae အရှေ့ mr yay ma ya tl */
+    /* radial-gradient mr deg ma ya  */
+    background-image: linear-gradient(
+        -45deg,
+        rgba(198, 72, 137, 0.5),
+        rgba(40, 120, 136, 0.5)),
+        url(../Img/Cover/bg2.jpg);
+    background-repeat: no-repeat;
+}

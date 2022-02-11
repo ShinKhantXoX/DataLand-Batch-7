@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+</head>
+<body>
+    <h3>Form Elements</h3>
+
+    <fieldset>
+        <legend>This is Sample Form &copy;</legend>
+    <!-- enctypeကfileပါတာနဲ့ထည့်ပေးရမယ် -->
+    <form action="" method="" enctype="multipart/form-data">
+        <label for="firstname">First Name </label>
+        <input type="text" name="firstname" id="firstname" class="" autocomplete="off" autofocus  placeholder="Enter your firstname"
+        minlength="3" maxlength="7" required/>
+
+        <br/> <br/>
+
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" class="" autocomplete="off"  placeholder="Enter your lastname" required/>
+
+        <br/> <br/>
+
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" class="" placeholder="Pls enter your age" min="0" max="99">
+
+        <br/> <br/>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" class="" autocomplete="off" placeholder="email"/>
+
+        <br/><br/>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" class="" />
+        <br/> <br/>
+
+        <label>Gender</label>
+        <input type="radio" name="gender" id="genderm" class="" value="1" checked /><label for="genderm">Male</label>
+        <input type="radio" name="gender" id="genderf" class="" value="2" /><label for="genderf">Female</label>
+        <input type="radio" name="gender" id="gendero" class="" value="0" /><label for="gendero">Other</label>
+
+        <br/> <br/>
+
+        <label>Fruits</label>
+        <input type="radio" name="fruit" id="fruita" class="" value="1" /><label for="fruita">Apple</label>
+        <input type="radio" name="fruit" id="fruito" class="" value="2" checked /><label for="fruito">Orange</label>
+        <input type="radio" name="fruit" id="fruitb" class="" value="0" /><label for="fruitb">Banana</label>
+        <br>
+        <br>
+
+        <label for="">Choose your fav color</label>
+        <input type="checkbox" name="color" id="colorrd" class="" value="red" checked /><label for="colorrd">Red</label>
+        <input type="checkbox" name="color" id="colorbk" class="" value="black"/><label for="colorbk">Black</label>
+        <input type="checkbox" name="color" id="colorbe" class="" value="blue"  /><label for="colorbe">Blue</label>
+        <input type="checkbox" name="color" id="colorgn" class="" value="green"/><label for="colorgn">Green</label>
+
+        <!-- stand alone attribute -->
+        <!-- disabled -->
+        <!-- autofocus -->
+        <!-- selected -->
+        <!-- checked -->
+        <!-- required -->
+        <br><br>
+
+        <label for="country">Citizen</label>
+        <select name="country" id="country" class=""> 
+            <option value="mm">Myanmar</option>
+            <option value="thi">Thailand</option>
+            <option value="sig">Singapore</option>
+            <option value="sik">Srilaka</option>
+        </select>
+
+        <br><br>
+
+        <label for="role">Role</label>
+
+        <select name="role" id="role" class="" multiple>
+            <option value="1">Manager</option>
+            <option value="2">Editor</option>
+            <option value="3">Supervisor</option>
+            <option value="4">Sales</option>
+        </select>
+
+        <br><br>
+
+        <label for="dob">DOB</label>
+        <input type="date" name="dob" class="" />
+
+        <br><br>
+
+        <label for="bookingtime">Booking Time</label>
+        <input type="time" name="bookingtime" id="bookingtime" class="" />
+
+        <br><br>
+
+        <label for="apt">Appoint</label>
+        <input type="datetime-local" name="apt" id="apt" class="">
+
+        <br><br>
+        <label for="volume">Volume</label>
+        <input type="range" name="volume" id="volume" class="" value="0" min="0" max="100" step="20" >
+
+        <br><br>
+
+        <label for="bio">Bio</label>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="write Something...."></textarea>
+
+        <br><br>
+
+        <!-- capture-accept က camera only on phone -->
+        <label for="nrc">Nrc</label>
+        <input type="file" name="nrc" id="nrc" class="" capture="user" accept="image/*" multiple/>
+
+        <!-- video=enviroment -->
+        <label for="nrc">View Record</label>
+        <input type="file" name="nrc" id="nrc" class="" capture="enviroment" accept="video/*" multiple/>
+
+        <br><br>
+        <input type="hidden" name="test" id="test" class="" value="3" />
+
+        <br><br>
+        <input type="reset" name="reset" id="reset" class="" value="Cancel">
+        <input type="submit" name="submit" id="submit" class="" value="Register">
+        <button type="submit" name="login" id="login" class="">Login</button>
+
+
+    </form>
+    </fieldset>
+</body>
+</html>
