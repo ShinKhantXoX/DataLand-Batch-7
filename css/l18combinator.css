@@ -70,3 +70,25 @@
 .vehicle .car.indo{
     color: lightgreen;
 } */
+
+/* Class to tag by group selector */
+/* .div1 p,.div1 b{
+    color: red;
+} */
+
+/* Child Selector (>) */
+/* .div2 > p{
+    color: red;
+} */
+
+/* Sibling Selector (2 types) */
+/* (i)General Sibling Selector (~) */
+/* .div4 ~ p{
+    color: red;
+} */
+
+/* (ii)Adjecnet Sibling Selector (+) */
+/* ကပ်လျက်ရှိတဲ့ Element ကိုဘဲ ပေးတာ */
+/* .div7 + p{
+    color: red;
+} */
