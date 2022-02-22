@@ -1,0 +1,24 @@
+/* .para::first-line{
+    color: red;
+    font-size: 20px;
+} */
+
+/* .para::first-letter{
+    color: red;
+    font-size: 50px;
+} */
+
+/* .para::selection{
+    color: aqua;
+    background-color: red;
+} */
+
+/* .para::before{
+    content: "Hello";
+    font-size: 30px;
+} */
+
+.para::after{
+    content: "Hola";
+    font-size: 30px;
+}

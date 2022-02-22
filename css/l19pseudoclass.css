@@ -46,13 +46,35 @@
     color: #fff;
 } */
 
+/* .div1:nth-child(odd-မ){
+    background-color: red;
+    color: #fff;
+} */
+
+/* .div1:nth-child(even-စုံ){
+    background-color: red;
+    color: #fff;
+} */
+
+/* ___________________________ */
+
+/* Child Vs Type */
+
+/* .div1:last-child{
+    background-color: red;
+    color: #fff;
+    border-radius: 15px;
+} */
+
+/* .div1:last-of-type{
+    background-color: red;
+    color: #fff;
+} */
+
 /* .div1:nth-child(odd){
-    background-color: red;
-    color: #fff;
+    background-color: blue;
 } */
 
-/* .div1:nth-child(even){
+/* .div1:nth-of-type(odd){
     background-color: red;
-    color: #fff;
 } */
-
