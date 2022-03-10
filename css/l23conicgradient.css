@@ -1,0 +1,73 @@
+.container1 .circle1{
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(yellow,red,rgb(24, 221, 100),rgb(77, 9, 236));
+    border-radius: 50%;
+}
+
+.container1 .circle2{
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(#581b98,#9c1de7,#f3558e,#f3558e);
+    border-radius: 50%;
+}
+.container1 .circle3{
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(
+        rgba(245, 40, 145, 0.8),
+        rgba(76, 39, 245, 0.8),
+        rgba(39, 217, 245, 0.8),
+        rgba(39, 245, 63, 0.8)
+    );
+    border-radius: 50%;
+}
+
+.container1 .circle4{
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(
+        aqua 40%,
+        red 0% 60%,
+        blue 0%
+    );
+    border-radius: 50%;
+}
+
+.container2{
+    width: 600px;
+    height: 600px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 .c1{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: conic-gradient(
+    	violet,indigo,blue,green,yellow,orange,red);
+
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*z-index: -1;*/
+}
+
+.container2 .c2{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+.pointercontainer{
+
+}
+.pointer{
+	width: 20px;
+	height: 20px;
+	display: block;
+
+}

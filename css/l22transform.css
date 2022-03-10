@@ -1,0 +1,109 @@
+
+:root{
+	--gc:green;
+	--oc:orange;
+	--rc:red;
+	--bc:blue;
+	--gc:gold;
+}
+
+.div1{
+	width: 100px;
+	height: 100px;
+	background-color: var(--gc);
+
+	transform: rotate(45deg);
+}
+
+.div2{
+	width: 100px;
+	height: 100px;
+	background-color: var(--oc);
+
+	transform: rotate(-30deg);
+}
+
+.div3{
+	width: 200px;
+	height: 80px;
+	background-color:var(--rc);
+
+	transform: rotateX(50deg);
+}
+
+.div4{
+	width: 200px;
+	height: 80px;
+	background-color:var(--bc);
+
+	transform: rotateY(50deg);
+}
+
+.div5{
+	width: 200px;
+	height: 80px;
+	background-color:var(--bc);
+
+	transform: scale(0.5);
+}
+
+.div6{
+	width: 200px;
+	height: 80px;
+	background-color:var(--bc);
+
+	/*transform: skew(50deg);*/
+	transform: skew(-50deg);
+}
+
+.div7{
+	width: 200px;
+	height: 80px;
+	background-color:var(--gc);
+						/*default = transform(x)*/
+	/*transform: translate(50%);*/
+	/*transform: translate(-50%);*/
+	/*transform: translate(100%);*/
+	/*transform: translate(-100%);*/
+
+	/*transform: translate(200px);*/
+	/*transform: translate(-100px);*/
+
+	/*transform: translateX(100%);*/
+	/*transform: translateX(-100%);*/
+
+	/*transform: translateY(100%);*/
+	/*transform: translateY(-100%);*/
+}
+
+.country{
+	font-size: 16px;
+
+	/* Vendor Prifix Properties */
+	-webkit-appearance: none; /*Chrome safir opera -o- ,internet Explorer -ms-*/
+	-moz-appearance: none;/*Mozila Firefox*/
+	appearance: none;
+
+	padding: 10px 30px 10px 10px;
+	background-image: url('../img/downarrow.png');
+	background-size: 15px;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-position-X: 95%;
+}
+h1{
+	text-align: center;
+}
+p.text{
+	text-align: center;
+	color: red;
+}
+
+@media screen and (max-width: 600px) {
+	h1{
+		font-size: 25px;
+	}
+	p.text{
+		color: aqua;
+	}
+}
