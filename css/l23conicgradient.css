@@ -36,7 +36,7 @@
 
 .container2{
     width: 600px;
-    height: 600px;
+    height: 300px;
     background-color: aqua;
     display: flex;
     justify-content: center;
@@ -45,14 +45,14 @@
 }
 
 .container2 .c1{
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
     border-radius: 50%;
     background: conic-gradient(
-    	violet,indigo,blue,green,yellow,orange,red);
+    	violet,indigo 0% 25%,blue 0% 45%,green 0% 65%,yellow 0% 85%,orange 0% 100%,red);
 
     position: absolute;
-
+    
 }
 
 .container2 .c2{
@@ -61,15 +61,35 @@
     border-radius: 50%;
     background-color: #000000;
     position: absolute;
-    z-index: 3;
+    z-index: 1;
 }
 .pointercontainer{
-
+    width: 20px;
+    height: 200px;
+    position: absolute;
+    top: -50px;
+    z-index: 4;
+    animation-name: ani;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: bottom;
 }
 .pointer{
 	width: 20px;
 	height: 20px;
-    background-color: violet;
+    background-color: red;
+    border-radius: 50%;
 	display: block;
+    position: absolute;
+    z-index: 4;
+}
 
+@keyframes ani{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
