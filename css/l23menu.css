@@ -1,0 +1,31 @@
+nav{
+    width: 1200px;
+}
+
+nav ul{
+    list-style-type: none;
+    list-style: none;
+}
+
+nav ul li{
+    /* list-style-type: none;
+    list-style: none; */
+    background-color: aqua;
+    width: 250px;
+    text-align: center;
+
+    float: left;
+    line-height: 50px;
+
+    border-right:2px solid black;
+    transition:  all 1s;
+}
+
+nav ul li:last-of-type{
+    border-right: none;
+}
+
+nav ul li:hover{
+    background-color: blue;
+    line-height: 60px;
+}
