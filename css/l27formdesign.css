@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+
+
+:root{
+	--wcc: #f4f4f4;
+	--gyc: #777;
+	--dbc: #05409e;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+
+body{
+	font-family: 'Stick', sans-serif;
+
+		/*viewport height (vh)*/
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin: 0;
+
+	overflow: hidden;
+}
+
+
+.container{
+	width: 480px;
+	background-color: var(--wcc);
+			/*h v b c*/
+	box-shadow: 0 2px 15px rgb(0, 0, 0,3);
+}
+
+.container h2{
+	text-align: center;
+	 margin-bottom: 0;
+}
+
+
+.container .form{
+		/*top&bottom left&right: ;*/
+	padding: 30px 40px;
+}
+
+
+
+.form .form-group{
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+}
+
+
+.form-group label{
+	display: block;
+	color: var(--gyc);
+	margin-bottom: 5px;
+}
+
+
+.form-group .form-control{
+	font-family: inherit;
+	width: 100%;
+	padding: 10px;
+}
+
+.form-group .form-control::placeholder{
+    color: rgba(0,0,0,0.5);
+}
+
+.form .btn{
+	font-family: inherit;
+	width: 100%;
+	background-color: var(--dbc);
+	color: #fff;
+	font-size: 16px;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+
+	transition: all 0.5s;
+
+}
