@@ -7,7 +7,9 @@
     <title>Date And Time </title>
 </head>
 <body>
-    
+    <div>
+        <small>Copyright © <span id="dimyear"></span> Eleven Media Group Co., Ltd. All rights reserved.</small>
+    </div>
 
 
     <script type="text/javascript">
@@ -20,13 +22,51 @@
         console.log(getdate);
 
         let hour = new Date().getHours();
-        console.log(hour);
+        console.log(`This is hours = ${hour}`);
 
         let minute = new Date().getMinutes();
-        console.log(minute);
+        console.log(`This is minutes = ${minute}`);
 
         let second = new Date().getSeconds();
-        console.log(second);
+        console.log(`This is seconds = ${second}`);
+
+            // 1jan 1970 > upnow
+        let time = new Date().getTime();
+        // console.log(`This is time = ${time}`)
+        let now = Date.now();
+        console.log(`This is now = ${now}`);
+
+
+        let month = date.getMonth();
+        console.log(`This is month = ${month}`);
+
+        let day = date.getDay();
+        console.log(`This is day = ${day}`);
+
+        let year = date.getFullYear();
+        console.log(`This is year = ${year}`);
+        let utcyear = date.getUTCFullYear();
+        console.log(`This is UTC year = ${utcyear}`);
+
+        document.getElementById('dimyear').innerText = year;
+
+        // m d y hr:m:s
+        let birthday = new Date();
+        birthday = new Date('2-27-2002 11:30:00');
+        birthday = new Date('Feb 27 2002');
+        birthday = new Date('February 27 2002 11:00:00');
+        birthday = new Date('2/27/2002');
+
+        console.log(birthday);
+
+        birthday.setMonth(2);
+        birthday.setDate(12);
+        birthday.setFullYear(2003);
+        birthday.setHours(15);
+        birthday.setMinutes(36);
+        birthday.setSeconds(59);
+
+        console.log(birthday);
     </script>
 </body>
 </html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Conversion</title>
+</head>
+<body>
+    
+
+    <script type="text/javascript">
+        
+        let val;
+
+        //to String
+
+        val = 'aung aung';
+
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length); //String , array method
+
+        //Number to String
+
+        // val = "20";
+        // val = '20';
+        // val = `20`;
+        val = String(20);
+
+        val = "20+20";
+
+        const val1 = "20",
+            val2 = "20";
+        
+        val = val1+val2;
+
+        val = String(20+30); //50
+
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+        //Bool to String
+        val = true;
+        val = String(val);
+
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+        //Date to String
+
+        val = new Date();
+        val = String(new Date());
+
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+        //Array to String
+
+        val = "[1,2,3,4,5]";
+        val = String([1,2,3,4,5]); //"1,2,3,4,5"
+        
+        val = [1,2,3,4,5];
+        val = val.toString(); //"1,2,3,4,5"
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+        //String to Number
+
+        val = "20";
+        // val = Number(val);
+        val = +val;
+
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+        // val = Number(prompt('Enter Number'));
+        // val = +prompt("Enter Number");
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+        val = +'aung aung'; //NaN = Not a Number
+        val = Number("aung aung"); //NaN = Not a Number
+        val = Number([1,2,3,4,5]); //NaN = Not a Number
+
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+
+    </script>
+</body>
+</html>
+
+
