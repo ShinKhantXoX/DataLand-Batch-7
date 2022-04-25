@@ -93,6 +93,51 @@
         console.log(typeof val);
         console.log(val.length);
 
+        val = 123.3456;
+        console.log(val);
+        console.log(val.toFixed(2));
+
+        val = "50.876";
+        val = parseInt(val); //50
+
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.toFixed(2));
+
+        val = "50.876";
+        val =parseFloat(val);
+        console.log(val);
+        console.log(typeof val);
+
+        //Boolean to Number
+        val = Number(false);
+        val = Number(true);
+        console.log(val);
+        console.log(typeof val);
+
+        //String to Array
+
+        val = "aung tun tun";
+        val = Array.from(val);
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+        console.log(Array.isArray(val));
+
+        // can't convert to array
+        val = 2;
+        val = Array.from(val);
+
+        val = true;
+        val = Array.from(val);
+
+        val = {
+            music: 'rock',
+            sport: 'football'
+        };
+        val = Array.from(val);
+        console.log(val);
+        console.log(typeof val);
 
     </script>
 </body>
