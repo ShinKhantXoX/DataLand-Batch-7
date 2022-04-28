@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+
+    <script type="text/javascript">
+        
+        const name = {
+
+            firstname:"aung aung",
+            lastname:"kyaw"
+        }
+
+        console.log(name.firstname,name.lastname);
+
+        const persons = {
+            person1:"aung aung",
+            person2:"kyaw kyaw",
+            person3:"zaw zaw"
+        }
+
+        console.log(persons.person2,persons.person3);
+
+        //Manual Array ( array start form index no 0)
+        //length start form 1
+
+        let arrgirls = new Array("su su","lu lu","hla hla");
+        console.log(arrgirls);
+        console.table(arrgirls);
+        console.log(arrgirls.length);
+
+        console.log(arrgirls[0]);
+        console.log(arrgirls[1]);
+        console.log(arrgirls[2]);
+        console.log(arrgirls[3]); //undefined
+
+        let arrboys = ['mg mg','naung naung','naung naung','kyaw gyi'];
+
+        console.log(arrboys);
+        console.log(arrboys.length);
+
+        console.log(arrboys[2]);
+        console.log(arrboys[3]);
+
+        let x = [1200,1300,1400,1500,1600,1700,1800];
+        console.log(x);
+        console.log(x.length);
+        console.log(x[4]);
+        console.log(typeof x[4]);
+
+        let y = ["hello",1500,true,undefined,null,new Date(),{firstname: "kyaw kyaw",lastname: "aung aung"}];
+
+        console.log(y);
+        console.log(y.length);
+
+        console.log(y[1]);
+        console.log(y[5]);
+        console.log(y[6]);
+        console.log(y[6].firstname);
+        console.log(y[6].lastname);
+
+        let m = [1000,2000,3000,4000,5000];
+
+        console.log(m);
+        console.log(m.length);
+        console.log(m[2]);
+        console.log(m.indexOf(3000)); // result = 2
+        console.log(m.indexOf(5000)); //result = 4
+        console.log(m.indexOf("4000")); // result = -1
+
+        //String is Character in js
+        let myfriend = "Ayng Ko Ko";
+        console.log(myfriend);
+        console.log(typeof myfriend);
+        console.log(myfriend.length);
+        console.log(Array.isArray(myfriend)); //false
+
+        console.log(myfriend[0]);
+        console.log(myfriend[5]);
+        console.log(myfriend[6]);
+
+        let colors = [];
+
+        colors[7] = "blue";
+        colors[0] = "black";
+        colors[1] = "orange";
+        colors[3] = "blue";
+        colors[2] = "red";
+
+        console.log(colors);
+        console.log(colors.length);
+
+
+
+    </script>
+</body>
+</html>
