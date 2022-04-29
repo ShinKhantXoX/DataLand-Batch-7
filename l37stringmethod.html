@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Method</title>
+    <style>
+        /* #mm{
+            color: red;
+            font-size: 50px;
+        }
+        #th{
+            font-family: Arial;
+            color: blue;
+        } */
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1 id="mm">Myanmar</h1>
+        <h1 id="th">Thailand</h1>
+    </div>
+    
+
+
+    <script type="text/javascript">
+        
+        // String Method
+
+        let firstname = "Maung Maung";
+        let lastname = "Kyaw";
+        console.log(firstname);
+        console.log(lastname);
+        console.log(firstname.length);
+
+        //Concat ( string + )
+        let fullname = firstname+lastname;
+        console.log(fullname);
+
+        // Append
+
+        firstname += lastname;
+        console.log(firstname);
+
+        //concat()
+
+        var fstname = "Zayar";
+        var lstname = "kyaw";
+        var myname = fstname.concat(lstname);
+
+        console.log(myname);
+
+        // Charracter Array
+        console.log(myname.length);
+        console.log(myname[2]);
+        console.log(myname[9]);
+        console.log(myname[myname.length-1]);
+
+        // charAt()
+        console.log(myname.charAt(2));
+
+        console.log(myname.charAt(myname.length-1));
+
+        //includes()
+        let fav = 'My fav color is black color';
+        console.log(fav);
+        //result = true
+        console.log(fav.includes("black"));
+        //result = false
+        console.log(fav.includes('red'));
+        //result = false
+        console.log(fav.includes("BLACK"));
+        //result = false
+        console.log(fav.includes('Black'));
+        //result = true
+        console.log(fav.includes("bla"));
+
+
+        //replace(old,new)
+        console.log(fav.replace("black","blue"));
+        console.log(fav.replace("bla","red")); //redck
+        console.log(fav.replace("color","parpar")); //first color
+
+        //substring(index,length)
+        console.log(fav.substring(0,10)+"...");
+        console.log(fav.substring(0,10).concat("...."));
+
+        //Change Case
+        console.log(fav.toLocaleUpperCase());
+        console.log(fav.toLocaleLowerCase());
+
+        //Style
+        document.getElementById('mm').style.color = "green";
+        document.getElementById("mm").style.fontSize = "50px";
+
+        document.getElementById("th").style.color = "blue";
+        document.getElementById("th").style.fontFamily = "Arial";
+        // document.getElementById("th").style.display = "none";
+
+
+    </script>
+</body>
+</html>
