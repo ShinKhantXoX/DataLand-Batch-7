@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping</title>
+</head>
+<body>
+    
+
+
+    <script type="text/javascript">
+        
+        let obj = {
+            name:'aung aung',
+            age:'30'
+        };
+
+        console.log(obj);
+        console.log(obj.name);
+        console.log(obj.age);
+
+        let arr = ['red','green','black'];
+        console.log(arr);
+        console.log(arr[0]);
+        console.log(arr[1]);
+        console.log(arr[2]);
+
+        // 1. For Loop
+            // start end ?? in/de
+        // //for(statement1;statement2;statement3){
+        //     code to be excuted
+        // }
+
+        let i = 0;
+        for(i; i < 10; i++){
+            console.log(i);
+        }
+
+        console.log('this is i value from outside ' + i);
+
+        for(var j = 5; j < 10;j++){
+            console.log('j value is = '+j);
+        }
+
+        console.log('this is j value from outside = ' + j);
+
+            // result = 0 then error
+        // for(const k = 0; k < 10; k++){
+        //     console.log('k vlue is = '+k);
+        // }
+
+        for(var m=0; m<=10;m++){
+            if(m === 5){
+                console.log('5 is my fav number');
+            }
+            console.log(m);
+        }
+
+        for(var n = 0; n< 10;n++){
+
+            console.log(n);
+
+            if( n === 2){
+                console.log( n + 'is my fav number');
+                break;
+            }
+
+            // console.log(n);
+        }
+
+        console.log('this is n value from outside = ' + n);
+
+        for(var q=0; q<10; q++){
+
+            if( q === 2){
+                console.log(q +' is my fav number');
+                continue;
+            }
+
+            if( q === 5){
+                console.log(q +' is my fav number');
+                break;
+            }
+
+            console.log(q);
+        }
+
+        console.log('this is q value from outside = '+q);
+
+        for(var s=10;s>=0;s--){
+            console.log(s);
+        }
+
+        console.log('this is s value from outside = '+s);
+
+        document.write(`<h1>For Loop</h1>`)
+
+        let myarrs = ['red','orange','black','green','grey'];
+        // console.log(myarrs.length);
+
+        // for(let w=0; w<6 ;w++){
+        //     console.log(w);
+        //     console.log(myarrs[w]);
+        // }
+
+        for(let w=0; w<myarrs.length ;w++){
+            // console.log(w);
+            document.write(myarrs[w] + '<br>');
+        }
+
+    </script>
+</body>
+</html>
