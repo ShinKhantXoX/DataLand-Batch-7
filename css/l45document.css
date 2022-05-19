@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.container .card{
+    padding: 30px 40px;
+}
+
+.card h3,.card h4{
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.form-control{
+    margin-bottom: 20px;
+}
+
+.form-control label{
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control .task{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid silver;
+}
+
+.form-control .task:focus{
+    outline: 0;
+    border-bottom-color: blue;
+}
+
+.form .btn{
+    width: 100%;
+    background-color: darkblue;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 0;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card .card-action{
+    border-top: 1px dashed silver;
+    border-bottom: 1px dashed silver;
+    margin-top: 20px;
+}
+
+.list-group{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-group .list-group-item{
+    display: flex;
+    justify-content: space-between;
+    line-height: 2rem;
+}
+
+.list-group .list-group-item a i{
+    color: red;
+}
+
+.clear-tasks{
+    text-decoration: none;
+    background-color: red;
+    color: #fff;
+    padding: 3px 5px;
+}
+.card .moretasks{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.moretasks .loading{
+    width: 20px;
+}

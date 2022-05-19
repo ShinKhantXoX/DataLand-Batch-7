@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+
+
+    
+
+    <script type="text/javascript">
+        
+        // Regular Function
+
+        let regfun1 = function(){
+            let num1 = 60;
+            return num1;
+        }
+
+        console.log('This is regfun1 = '+regfun1());
+
+        //Arrow Function
+
+        // Method 1
+
+        let arrfun1 = ()=>{
+            let num1 = 200;
+            return num1;
+        }
+        console.log('This is arrfun1 = '+ arrfun1());
+
+        // Method 2
+        // let arrfun2 = (num1)=>{
+        //     return num1;
+        // }
+
+        // console.log('This is arrfun2 = '+ arrfun2(300));
+
+        let arrfun2 = num1=>{
+            return num1;
+        }
+
+        console.log('This is arrfun2 = '+ arrfun2(300));
+
+        // Method3
+
+        let arrfun3 = num1=>num1+500;
+
+        console.log('This is arrfun3 = '+ arrfun3(200));
+
+        // Multi Parameter
+
+        let multifun1 = (num1=1,num2=2)=>{
+                const result = num1+num2;
+
+                return result;
+        }
+
+        console.log('This is multifun1 = '+ multifun1(100,200));
+        console.log('This is multifun1 = '+ multifun1(100));
+        console.log('This is multifun1 = '+ multifun1());
+
+
+
+    </script>
+</body>
+</html>

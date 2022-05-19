@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Function</title>
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin: 0;
+            overflow: hidden;
+        }
+        .box{
+            width: 300px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+        label{
+            display: block;
+            margin: 10px 0;
+        }
+        .form-control{
+            width: 100%;
+            display: block;
+            padding: 5px;
+        }
+        .btn{
+            width: 100%;
+            font-size: 16px;
+            background-color: darkblue;
+            color: #fff;
+            border: none;
+            margin-top: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h3>Show Name = <span id="replacename"></span></h3>
+
+        <form action="">
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname" class="form-control" autofocus autocomplete="off">
+
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" class="form-control" autofocus autocomplete="off">
+
+            <button type="button" class="btn" onclick="getdata()">Get Name</button>
+        </form>
+    </div>
+
+    <script type="text/javascript">
+        
+        //Function
+
+        // function name(parameter){
+        //     //code to be executed
+        // }
+
+        // name();  invoke/function recall
+
+        // 1. Regular Function
+        //  (i)manual function
+        // (ii)parameter function
+                //(a)single parameter function
+                //(b)multi  parameter function
+        
+        // Manual Function
+
+        function great(){
+            console.log('Hello Myanmar');
+            console.log('Hello Singapore');
+            console.log('Hello Thailand');
+        }
+
+        great();
+        great();
+
+
+        function hello(){
+            console.log('Hello Yangon');
+        }
+
+        hello();
+
+        function hello(){
+            console.log('Hello Mandalay');
+        }
+
+        hello();
+
+        function funone(){
+            console.log('I am function one');
+        }
+
+        function funtwo(){
+
+            funone();
+
+            console.log('I am function Two');
+
+            funthree();
+
+        }
+
+        function funthree(){
+
+            funone();
+
+            console.log('I am function Three');
+
+        }
+
+        funtwo();
+
+
+ //.................................................
+
+        // Return
+
+        function funfour(){
+            console.log(4);
+        }
+
+        function funfive(){
+            console.log(5);
+        }
+
+        function funsix(){
+            // funfour();
+            // funfive();
+
+            const num1 = funfour();
+            const num2 = funfive();
+
+            // console.log(num1); // result  =  undefined
+            // console.log(num2); // result  =  undefined
+
+            const total = num1+num2;
+            console.log(total); // result = NaN ( Not a Number )
+        }
+
+        funsix();
+
+        function funseven(){
+            return 7;
+        }
+
+        // console.log(funseven());
+
+        function funeight(){
+            var num1 = 8;
+            return num1;
+        }
+
+        // funeight();
+        // console.log(funeight());
+
+        function funnine(){
+            const num1 = funseven();
+            const num2 = funeight();
+
+            // const total = num1 + num2;
+            // console.log(total);
+
+            return total = num1 + num2;
+        }
+
+        // funnine(); // can't work because return
+
+        console.log(funnine());
+
+        function test(){
+
+            const num1 = 100;
+            const num2 = 200;
+            const total = num1 + num2;
+
+            return 'Hee Hee'
+        }
+
+        console.log(test());
+
+
+//....................................................
+
+        // (ii)parameter function
+                //(a)single parameter function
+
+
+        function myfun1(city){
+            // console.log('Hello'+city);
+            console.log(`Hello ${city}`);
+        }
+
+        myfun1(); // Hello undefined
+        myfun1('Yangon');
+        myfun1('Mandalay');
+        myfun1(400);
+
+        // Default parameter
+
+        function myfun2(country='Indonesia'){
+            console.log(`Hello ${country}`);
+        }
+
+        myfun2('Thailand');
+        myfun2('Myanmar');
+        myfun2();
+
+
+        //(b)multi  parameter function
+
+        function multifun1(x,y,z){
+            console.log(`x value is ${x} , y value is ${y} , z value is ${z}`);
+        }
+
+        multifun1(10);
+        multifun1(10,20);
+        multifun1(10,20,30,);
+        multifun1(10,20,30,40);
+
+        function multifun2(x=1,y=2,z=3){
+            console.log(`x value is ${x} , y value is ${y} , z value is ${z}`);
+        }
+
+        // multifun2(100,200,300);
+        // multifun2(100,200);
+        // multifun2(100,);
+        // multifun2(100);
+
+        function multifun3(x=1,y=2,z=3){
+
+            // let result = x+y+z;
+            // return result;
+
+            return x+y+z;
+
+            return result = x+y+z;
+            // error
+            // return var result = x+y+z;
+            // return const result = x+y+z;
+            // return let result = x+y+z;
+        }
+
+        console.log(multifun3(10,20)); // result = 33
+
+//........................................................
+
+        // 3. Constructor function ( string structure )
+
+        const constrfunone = new Function('j','k','l','return j+k+l');
+
+        console.log(constrfunone(10,20,30));
+
+        console.log(constrfunone('10','20','30')); //result = 102030
+
+//........................................................
+
+        // 4. Nameless Function ()
+
+        let annfunone = function (name,color){
+            console.log(`My name is ${name}. I love ${color} color.`);
+        }
+
+        annfunone('aung aung','red');
+
+//.........................................................
+
+        // 5. Self invoking function
+
+        (function(){
+            console.log('Save Myanmar');
+        })();
+
+        (function(name){
+            console.log(`My name is ${name}`);
+        })('tun tun');
+
+//.....................................................
+
+        function getdata(){
+            // console.log('I am working');
+
+            var getfirstname = document.getElementById('firstname').value;
+            var getlastname = document.getElementById('lastname').value;
+            // console.log(getfirstname,getlastname);
+
+            var getreplacename = document.getElementById('replacename');
+
+            getreplacename.innerText = `${getfirstname} ${getlastname}`;
+            
+            document.getElementById('firstname').value = '';
+            document.getElementById('lastname').value = '';
+
+            document.getElementById('firstname').focus();
+            
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

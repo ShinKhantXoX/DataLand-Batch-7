@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        
+        // Local Storage
+
+        //Store
+            // localStorage.setItem('name','aung aung');
+            // localStorage.setItem('age',27);
+            // localStorage.setItem('city','Yangon');
+
+        // updated
+            //Method 1
+        // localStorage.setItem('name','kyaw kyaw');
+
+            //Method 2
+        localStorage.age = 30;
+
+        //Get
+
+        // let getname1 = localStorage.getItem('name');
+        // console.log(getname1);
+        // console.log(typeof getname1);
+
+        // let getage1 = localStorage.getItem('age');
+        // console.log(getage1);
+        // console.log(typeof getage1);
+
+        // let getcity1 = localStorage.getItem('city');
+        // console.log(getcity1);
+        // console.log(typeof getcity1);
+
+        //Delete/Destroy
+
+        // Method 1 ( destroy single )
+        // localStorage.removeItem('name');
+        // localStorage.removeItem('age');
+        // localStorage.removeItem('city');
+
+        // Method 2 ( destroy all )
+        // localStorage.clear();
+
+        //............................................
+
+        // Session Storage
+
+        // Store
+
+        sessionStorage.setItem('name','Su Su');
+        sessionStorage.setItem('age',30);
+        sessionStorage.setItem('city','Mandalay');
+
+        //Updated
+        // Method 1
+        sessionStorage.setItem('name','Lu Lu');
+
+        // Method 2
+        sessionStorage.age = 40;
+
+
+        //get
+        let getname1 = sessionStorage.getItem('name');
+        console.log(getname1);
+
+        //Delete
+
+
+    </script>
+</body>
+</html>
